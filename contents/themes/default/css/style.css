@@ -1,0 +1,125 @@
+html { 
+  height: 100%;
+}
+
+* { 
+  margin: 0;
+  padding: 0;
+}
+
+/* tell the browser to render HTML 5 elements as block */
+article, aside, figure, footer, header, hgroup, nav, section { 
+  display:block;
+}
+
+body { 
+  background: #FFF url(../images/back.jpg) no-repeat center fixed;
+  color: #222;
+}
+
+.transparent {
+  margin: 20px auto 5px auto;
+  width: 1000px;
+  border-radius: 13px 13px 13px 13px;
+  -moz-border-radius: 13px 13px 13px 13px;
+  -webkit-border: 13px 13px 13px 13px;
+  background: transparent url(../images/main.png);
+  padding-bottom: 30px;
+}
+
+header {
+  background: transparent;
+  height: auto;
+}
+
+header h1 {
+  font-family: 'Patrick Hand SC', cursive;
+  margin: 0 0 15px 0;
+  padding: 30px 0 5px 100px;
+  color: #222;
+}
+
+header h1 a, a:hover { 
+  outline: none;
+  text-decoration: none;
+  color: #0586C9;
+}
+
+header h2 {
+  font-family: 'Patrick Hand SC', cursive;
+  margin: 0 0 15px 0;
+  padding: 0px 0 5px 50px;
+  color: #222;
+}
+
+nav {
+  height: 35px;
+  width: 930px;
+  margin: 0px auto 0px auto;
+  color: #222;
+  background: #ddd; 
+  background: -moz-linear-gradient(#fff, #ddd);
+  background: -o-linear-gradient(#fff, #ddd);
+  background: -webkit-linear-gradient(#fff, #ddd);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2px;
+  border: 1px solid #eee;
+  border-radius: 7px 7px 7px 7px;
+  -moz-border-radius: 7px 7px 7px 7px;
+  -webkit-border: 7px 7px 7px 7px;
+}
+
+ul.sf-menu ,ul.sf-menu a{ 
+  display: block;
+  position: relative;
+}
+  
+ul.sf-menu li { 
+  display: block;
+  list-style: none;
+  float: left;
+  position: relative;
+}
+
+ul#nav li a {
+  padding:8px 20px 6px 20px;
+  text-decoration: none;
+  color: #000;
+  margin-right: 2px;
+}
+
+ul#nav li a:hover, ul#nav li a:focus { 
+  text-shadow: 1px 1px 1px #000;
+}
+
+article h1 {
+  font-family: 'Patrick Hand SC', cursive;
+  margin: 20px 0 15px 0;
+  padding: 0px 0 5px 50px;
+  color: #222;
+}
+
+article section {
+  width:930px;
+  height:400px;
+  margin:0px auto 0px auto;
+}
+
+#cut {
+  height: 5px;
+  width: 930px;
+  margin: 30px auto 0px auto;
+  background: #ddd; 
+  background: -moz-linear-gradient(#fff, #ddd);
+  background: -o-linear-gradient(#fff, #ddd);
+  background: -webkit-linear-gradient(#fff, #ddd);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2px;
+}
+
+#power {
+  width:200px;
+  margin:5px auto;
+}

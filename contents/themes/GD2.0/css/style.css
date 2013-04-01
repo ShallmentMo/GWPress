@@ -1,0 +1,418 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+ margin: 0;
+ padding: 0;
+}
+
+body{
+	background:url(../images/bg.gif) repeat center;
+	color:#8f8f8f;
+	
+}
+@font-face {
+ font-family: 'RomeralRegular';
+ src: url('../fonts/romeral-webfont.eot');
+ src: url('../fonts/romeral-webfontd41d.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/romeral-webfont.woff') format('woff'),
+      url('../fonts/romeral-webfont.ttf') format('truetype'),
+      url('../fonts/romeral-webfont.svg#RomeralRegular') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+
+@font-face {
+	font-family: 'LeagueGothicRegular';
+	src: url('../fonts/League_Gothic-webfont.eot');
+	src: local('☺'), url('../fonts/League_Gothic-webfont.woff') format('woff'), url('../League_Gothic-webfont.ttf') format('truetype'), url('../fonts/League_Gothic-webfont.svg#webfont1Lb5Pdit') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'LaneNarrowRegular';
+    src: url('../fonts/LANENAR_-webfont.eot?') format('eot'),
+         url('../fonts/LANENAR_-webfont.woff') format('woff'),
+         url('../fonts/LANENAR_-webfont.ttf') format('truetype'),
+         url('../fonts/LANENAR_-webfont.svg#webfontMAZXZguX') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*------- header ------*/
+header{
+	height: 25px;
+	background:#CCC;
+	}
+
+/*------- MainPage ------*/
+section{
+	width:960px;
+	margin:0 auto;
+	overflow: hidden;
+}
+
+/* ----aside---- */
+aside{
+	float:left;
+	width:248px;
+	position:fixed;
+	padding-top:10px;
+}
+/* ----nav---- */
+nav{
+	text-align:center;
+	margin-bottom:20px;
+}
+
+nav .logo{
+	font-family: "LeagueGothicRegular", Arial, Helvetica, sans-serif;
+	font-size:43px;
+	text-transform:uppercase;
+	text-align:center;
+	color:#a08784;
+	text-decoration:none;
+	margin:20px 0;
+	display:block;
+	font-weight:normal;
+	color:#a08784;
+	text-decoration:none;
+	text-shadow: #fff 0px 1px 0px;
+}
+nav .logo span{
+	font-size:15px;
+	display:block;
+	background:url(../images/a_portfolio_bg.png) no-repeat center .2em;
+	color:#c4bab7;
+	font-weight:normal;
+}
+
+nav ul{
+	/*background:url(../images/nav_bg.png) no-repeat bottom center;*/
+	font-family: "LeagueGothicRegular", Arial, Helvetica, sans-serif;
+	font-size:30px;
+	padding-top:30px;
+	background:url(../images/nav_bg.png) no-repeat top center;
+	text-transform:uppercase;
+}
+nav ul li{
+	position:relative;
+	margin-top:-7px;
+}
+nav ul li a, nav ul li a:link{
+	color:#7d6865;
+	text-decoration:none;
+	padding:10px 0 10px 0;
+	display:block;
+	text-shadow: #fff 0px 1px 0px;
+}
+nav ul li a:hover{
+	text-decoration:none;
+	color:#634d4a;
+}
+nav ul li.active{
+	background:url(../images/nav_active.png) no-repeat 26px .1em;
+}
+nav ul li.active a{
+	color:#fff;
+	text-shadow: #2b0d09 0px 1px 0px;
+}
+nav .bg_bottom{
+	background:url(../images/nav_bg.png) no-repeat bottom center;
+	height:30px;
+	
+}
+/* ----Main content---- */
+#main-content{
+	float:right;
+	width:636px;
+ /*   padding-top: 110px;*/
+    overflow: hidden;
+}
+
+
+/* Section-One */
+#section-one {
+	width: 636px;
+	margin-top: 50px;
+/*	height: 355px;*/
+	
+	      }
+#slider {
+ width: 636px;
+ height: 305px;
+ position:relative;
+ background:#fff url('img/loading.gif') no-repeat 50% 50%;
+}
+
+#slider img {
+ position:absolute;
+ top:0px;
+ left:0px;
+ display:none;
+}
+
+#slider a {
+ border:0;
+ display:block;
+}
+
+#slider .nivo-controlNav {
+ position:absolute;
+ left:31%;
+ bottom:-34px;
+ margin-left:-40px; /* Tweak this to center bullets */
+}
+
+a.nivo-control {
+ float: left;
+ color: black;
+ text-indent:-9999px;
+ background: url("../images/bullet.png");
+ display: block;
+ width: 12px;
+ height: 12px;
+ margin-right: 5px;
+}
+
+div.line1 {
+ background: url("../images/line1.png");
+ float: left;
+ width: 125px;
+ height: 12px;
+}
+
+div.line2 {
+ background: url("../images/line2.png");
+ float: left;
+ width: 125px;
+ height: 12px;
+}
+
+a.nivo-control:hover, a.active {
+ background: url("../images/bullet_active.png");
+}
+
+#slider .nivo-directionNav a {
+ display:block;
+ width:30px;
+ height:30px;
+ text-indent:-9999px;
+ border:0;
+}
+
+#slider a.nivo-nextNav {
+ width: 35px;
+ height: 35px;
+ background: url('../images/arrowRight.png');
+ right:10px;
+}
+
+#slider a.nivo-prevNav {
+ width: 35px;
+ height: 35px;
+ background: url('../images/arrowLeft.png');
+ left:10px;
+}
+
+#shadow {
+ width: 636px;
+ height: 49px;
+ background: url('../images/shadow.png');
+ margin-top: -27px;
+ margin-bottom: 51px;
+}
+/*---------section-two---------*/
+#section-two {
+	width: 636px;
+	margin-top: 30px;
+	}
+.section-two-one {
+ width: 636px;
+
+}
+.section-two-two {
+ width: 636px;
+
+}
+.section-two-one-part {
+ width: 636px;
+ float: left;
+ border-top: 1px solid #c8c0c0;
+ padding: 9px 9px 9px 9px;
+ margin-bottom: 30px;
+ overflow: auto;
+}	
+.section-two-two-part1 {
+ width: 636px;
+ float: left;
+ border-top: 1px solid #c8c0c0;
+ padding: 20 20 20 20;
+ overflow: auto;
+}
+.section-two-two-part2 {
+ width: 636px;
+ float: left;
+ border-top: 1px solid #c8c0c0;
+ padding-top: 20 20 20 20;
+ overflow: auto;
+}
+/*--- Section Three---*/
+#section-three {
+	width: 636px;
+	margin-bottom: 56px;
+}
+.padding {
+ padding-left: 20px;
+ padding-right: 20px;
+ overflow: auto;
+	}
+.intro-section {
+ border-top: 1px solid #c8c0c0;
+ border-bottom: 1px solid #c8c0c0;
+ padding-top: 9px;
+ padding-bottom: 9px;
+ overflow: auto;
+}
+
+.margin {
+ margin-top: 54px;
+}
+
+.clear {
+ clear: both;
+}
+
+/*-----footer------------*/
+footer {
+ height: 40px;
+ background: #CCC;
+ bottom:0px;
+}
+footer p {
+ color: #000;
+ font-size: 14px;
+ font-family: Arial, Helvetica, sans-serif;
+ padding-top: 11px;
+}
+
+.right {
+ float: right;
+ margin-left: 20px;
+}
+.left {
+ float: left;
+ margin-left: 300px;
+}
+.center-wrap {
+ width: 960px;
+ margin-left: auto;
+ margin-right: auto;
+}
+footer a.right {
+ color: #aaa8a8;
+ font-size: 12px;
+ padding-top: 11px;
+ padding-left: 15px;
+}
+
+footer a.right:hover {
+ text-decoration: underline;
+}
+/* Headings */
+h1 {
+ font-family: 'RomeralRegular';
+ font-size: 24px;
+ font-weight: normal;
+ letter-spacing: 0.5px;
+ color: #413e3e;
+ font-smooth: always;
+ -webkit-font-smoothing: antialiased;
+}
+
+h1 span {
+ color: #ac3b2f;
+}
+
+h2 {
+ font-size: 18px; 
+ line-height: 18px;
+ color: #413e3e;
+}
+
+h2 span {
+ color: #AC3B2F;
+}
+
+h3 {
+ font-size: 12px; 
+ line-height: 18px;
+ color: #545451;
+}
+
+canvas {
+ overflow: hidden;
+}
+
+/* ----list---- */
+.list{
+	float:left;
+	width:100%;
+	margin:0;
+	padding:0;
+}
+.list li{
+	display:inline;
+	margin-right:17px;
+	float:left;
+	margin-bottom:17px;
+}
+.list li.last{
+	margin-right:0px;
+}
+
+.last{
+	margin-right:0px;
+}
+
+/* ----figure---- */
+figure{
+	
+	-moz-box-shadow:0px 0px 5px #dfdfdf;
+	-o-box-shadow:0px 0px 5px #dfdfdf;
+	-webkit-box-shadow:0px 0px 5px #dfdfdf;
+	box-shadow:0px 0px 5px #dfdfdf;
+	padding:4px;
+	background:#fff url(../images/icon_magnify.gif) no-repeat center center;
+	float:left;
+	border:1px solid #d6d6d6;
+	margin-bottom:20px;
+	position:relative;
+}
+figure img{
+	float:left;
+}
+figure figcaption{
+	position:absolute;
+	bottom:0px;
+	margin-bottom:-5px;
+	width:170px;
+}
+
+figure figcaption a{
+	left:0;
+	position:absolute;
+	-webkit-transition: color 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+figure figcaption a:hover{
+	text-decoration:none;
+	color:#343434;
+}
+figure figcaption a span{
+	display:none;
+	position:absolute;
+}
+figure figcaption a:hover span{
+	display:inline;
+}
