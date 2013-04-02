@@ -52,7 +52,7 @@ if(get_option('active_plugins')!='')
 		<h1 class="logo">GWPress</h1>
 		<nav>
 			<ul>
-				<a href="#pages" class="btn btn-large btn-block"><li>Pages</li></a>
+				<a href="#pages" class="btn btn-large btn-block" ><li>Pages</li></a>
 				<a href="#options" class="btn btn-large btn-block"><li >Options</li></a>
 				<a href="#menus" class="btn btn-large btn-block"><li >Menus</li></a>
 				<a href="#users" class="btn btn-large btn-block"><li >Users</li></a>
@@ -233,7 +233,9 @@ if(get_option('active_plugins')!='')
 	},function()
 	{
 	$("#editor section .img img").attr("src","./images/stretch1.png");
-	$("#editor .stretch").animate({height: 'toggle', opacity: 'toggle'}, "slow");});
+	$("#editor .stretch").animate({height: 'toggle', opacity: 'toggle'}, "slow");
+	}
+	);
 	});
 	
 	$(document).ready(function(){
